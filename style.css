@@ -1,6 +1,7 @@
 html {
   --color-accent: oklch(65% 50% 0);
   accent-color: var(--color-accent);
+  color-scheme: light dark;
 }
 
 body {
@@ -20,9 +21,10 @@ nav li {
 }
 
 nav {
-  display: flex;
-  margin-bottom: 1em;
-  border-bottom: 1px solid oklch(80% 3% 200);
+    --border-color: oklch(50% 10% 200 / 40%);
+    display: flex;
+    margin-bottom: 1em;
+    border-bottom: 1px solid var(--border-color);
 }
 
 nav a {
@@ -34,19 +36,20 @@ nav a {
 }
 
 nav a.current {
-    border-bottom: 0.4em solid oklch(80% 3% 200);
+    border-bottom: 0.4em solid var(--border-color);
     padding-bottom: 0.1em;
 }
 
 nav a:hover {
     border-bottom: 0.4em solid var(--color-accent);
     padding-bottom: 0.1em;
-    background-color: oklch(from var(--color-accent) 95% 5% h);
+    background-color: color-mix(in oklch, var(--color-accent), canvas 85%);
 }
 
 input,
 textarea,
-button {
+button,
+select {
   font: inherit;
 }
 
@@ -94,7 +97,7 @@ h1, h2, h3, h4 , h5, h6 {
 .resume section {
     margin-block: 2em;
     padding-bottom: 1.5em;
-    border-bottom: 1px solid oklch(80% 3% 200);
+    border-bottom: 1px solid oklch(50% 10% 200 / 40%);
 }
 
 .resume section h2 {
@@ -116,4 +119,11 @@ h1, h2, h3, h4 , h5, h6 {
 
 .resume li {
     margin-bottom: 0.4em;
+}
+
+.color-scheme {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    font-size: 80%;
 }
