@@ -1,62 +1,85 @@
+
 [
     {
-        "title": "My First JavaScript Project",
-        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio necessitatibus veniam error soluta nulla, quia accusamus, corrupti ex officia libero inventore quos assumenda magni voluptatem quod, a fugiat quas ea."
+        "title": "League of Legends Comeback Analysis",
+        "year": "2026",
+        "image": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Aatrox_0.jpg",
+        "description": "Analyzed 2025 professional League of Legends match data to study how a gold deficit at 15 minutes affects comeback wins. Used data cleaning, exploratory visualizations, permutation tests, and machine learning.",
+        "url": "https://github.com/axia4133/lol-comeback-analysis"
     },
     {
-        "title": "Quia accusantium totam sunt!",
+        "title": "ShellCraft: Python Unix-Like Shell",
+        "year": "2026",
         "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-        "description": "Recusandae repellendus enim necessitatibus odio in a. Totam cumque amet nisi enim quibusdam obcaecati quas eveniet? Officia assumenda asperiores enim voluptatum! Facilis eum reprehenderit in unde ex fugiat, natus deserunt."
+        "description": "Collaborated on a Python shell interpreter at Peking University. Built an AST-based execution system supporting commands, pipes, redirection, and shell utilities, with automated tests and Docker workflows.",
+        "url": "https://github.com/msv-softeng/python-shell-shellcraft"
     },
     {
-        "title": "Excepturi alias suscipit tenetur!",
-        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-        "description": "Sit quo praesentium sed soluta, deserunt doloremque non aspernatur repudiandae minima sequi. Quas non minus odit, quisquam voluptate itaque quos facere molestias quae earum maiores porro? Ducimus accusamus alias temporibus?"
+        "title": "DSC 106 Project 2: Persuasive or Deceptive Visualization",
+        "year": "2026",
+        "image": "https://raw.githubusercontent.com/thinhdodata/dsc106-project2/main/chart_viz1.png",
+        "description": "Worked with a team to create opposing visual arguments about extreme poverty using World Bank data. Examined how chart types, annotations, and regional framing influence interpretation.",
+        "url": "https://github.com/thinhdodata/dsc106-project2"
     },
     {
-        "title": "Quia illum dolorum quae?",
+        "title": "Personalized Movie Recommendation System (In Progress)",
+        "year": "2026",
         "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-        "description": "Ipsum, accusantium laborum. Facere fugiat necessitatibus quod placeat earum eaque cupiditate, veniam nesciunt, voluptates, dolore sit libero quo? Libero, eveniet. Beatae autem deleniti tempora vitae! Quae in ipsam sit itaque."
+        "description": "Developing a movie recommendation pipeline using MovieLens 32M, PostgreSQL, SQL, Python, and Docker. Completed database schema work and development-sample ingestion; modeling is planned.",
+        "url": "https://github.com/axia4133/personalized-recommendation-system"
     },
     {
-        "title": "Quo at praesentium maxime.",
+        "title": "AI-Powered Roblox Game Generator (Prototype)",
+        "year": "2025",
         "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-        "description": "Nobis consectetur deserunt facere necessitatibus itaque delectus et totam quod optio autem unde quis, nulla aut? Itaque, pariatur sequi? Maiores odit perspiciatis inventore fuga dignissimos exercitationem, molestias nihil eum nostrum?"
+        "description": "Built a React and Express prototype that turns written Roblox game ideas into game blueprints, Lua script suggestions, and Studio project structures. Supports an API-backed generator and mock fallback.",
+        "url": "https://github.com/axia4133/ai-roblox-game-maker"
     },
     {
-        "title": "Consequatur recusandae dolor laborum.",
+        "title": "Personal Portfolio Website",
+        "year": "2026",
         "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-        "description": "Saepe reiciendis molestias rem in molestiae ea consectetur dolor iusto odit commodi enim eius asperiores eos, aliquam beatae, quam quasi, temporibus magni assumenda! Quam consequatur iure accusamus ratione soluta commodi."
+        "description": "Created a multi-page portfolio with HTML, CSS, and JavaScript. Added reusable navigation, persistent dark mode, JSON-powered project cards, and GitHub API profile statistics.",
+        "url": "https://github.com/axia4133/portfolio"
     },
     {
-        "title": "Iste autem magnam possimus.",
+        "title": "Caesar Cipher File Encryption",
+        "year": "2025",
         "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-        "description": "Impedit est reiciendis inventore repellendus magnam cupiditate hic quam et atque pariatur. Illo alias labore cupiditate natus facere magnam voluptas? Rem necessitatibus rerum nulla, exercitationem doloribus quo. Ut, eaque sapiente."
+        "description": "Python coursework implementing Caesar cipher encryption and decryption using file input and ASCII character shifting."
     },
     {
-        "title": "A modi esse nihil!",
+        "title": "Card Probability Simulator",
+        "year": "2025",
         "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-        "description": "Eius aut libero eum, pariatur magni, sequi quidem dolore ad veniam nemo atque illum explicabo ut beatae temporibus sed deleniti consectetur quae voluptas laboriosam soluta consequatur veritatis! Quaerat, debitis laudantium."
+        "description": "C++ coursework using Deck and Card classes to simulate drawing cards and investigate probabilities."
     },
     {
-        "title": "Modi cupiditate ea nihil?",
+        "title": "DSC 106 Lab 4: Dynamic Project Gallery",
+        "year": "2026",
         "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-        "description": "Repudiandae, reprehenderit? Expedita non consequuntur qui provident numquam atque error, earum fuga harum, at nisi vero magni maiores rem quibusdam ex suscipit, quis commodi laboriosam nam recusandae officiis quo dicta?"
+        "description": "Used JavaScript modules, JSON files, fetch(), and reusable rendering functions to populate project cards and retrieve GitHub profile statistics.",
+        "url": "https://github.com/axia4133/portfolio"
     },
     {
-        "title": "Sapiente, natus aliquid? Mollitia.",
+        "title": "DSC 106 Lab 3: Interactive JavaScript Features",
+        "year": "2026",
         "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-        "description": "Soluta ipsa non libero corrupti cupiditate obcaecati ducimus voluptatem voluptate suscipit facilis maxime alias, molestiae quod similique maiores quae tempora reprehenderit voluptatibus nemo dolor porro culpa. Inventore ullam asperiores hic?"
+        "description": "Automated portfolio navigation and developed a light/dark theme selector using DOM manipulation, event listeners, and localStorage.",
+        "url": "https://github.com/axia4133/portfolio"
     },
     {
-        "title": "Doloremque at inventore error.",
+        "title": "DSC 106 Lab 2: CSS Portfolio Layout",
+        "year": "2026",
         "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-        "description": "Molestias, eos? Architecto deserunt harum eligendi tempore, iusto aperiam dolore tempora explicabo nesciunt suscipit impedit. Veritatis porro eveniet ullam ipsam at asperiores dignissimos illo vel, beatae quo totam ut necessitatibus."
+        "description": "Styled a multi-page portfolio with CSS Grid, Flexbox, responsive project cards, and form styling.",
+        "url": "https://github.com/axia4133/portfolio"
     },
     {
-        "title": "Ut temporibus quae quo.",
+        "title": "NBA Win Probability Model (Concept)",
+        "year": "2026",
         "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-        "description": "Aperiam facilis quibusdam omnis asperiores minima distinctio obcaecati cupiditate. Dolorem porro excepturi quis quas ipsam debitis enim maiores ad at aperiam qui fuga, id officia, mollitia accusantium odit, consectetur eaque."
+        "description": "Proposed a model to estimate an NBA team's win probability from in-game information such as score and time. The GitHub repository is currently a project placeholder.",
+        "url": "https://github.com/axia4133/NBA-Win-Probability-Model"
     }
 ]
