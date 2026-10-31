@@ -189,3 +189,23 @@ h1, h2, h3, h4 , h5, h6 {
     padding: 0.5em;
     margin-bottom: 2em;
 }
+
+#projects-pie-plot:has(path:hover) path:not(:hover) {
+    opacity: 0.5;
+}
+
+#projects-pie-plot path {
+    transition: opacity 300ms;
+}
+
+#projects-pie-plot path {
+    cursor: pointer;
+}
+
+.selected {
+    --color: oklch(60% 45% 0) !important;
+}
+
+#projects-pie-plot path.selected {
+    fill: var(--color);
+}
