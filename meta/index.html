@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Code Analysis - Portfolio</title>
+
+  <!-- Same shared stylesheet and navigation/theme script as the rest of the portfolio. -->
+  <link rel="stylesheet" href="../style.css">
+  <!-- Only styles that this Lab 6 page needs. -->
+  <link rel="stylesheet" href="./style.css">
+  <script type="module" src="../global.js"></script>
+  <script type="module" src="./main.js"></script>
+</head>
+<body class="meta-page">
+  <main>
+    <h1>Code analysis</h1>
+    <p class="meta-intro">
+      A look at when I work on my portfolio and how its Git history is reflected in the current codebase.
+    </p>
+
+    <section aria-labelledby="stats-heading">
+      <h2 id="stats-heading">Summary statistics</h2>
+      <div id="stats" aria-live="polite">Loading code statistics…</div>
+    </section>
+
+    <section aria-labelledby="commits-heading">
+      <h2 id="commits-heading">Commits by time of day</h2>
+      <p class="meta-description">
+        Each circle represents a Git commit. The horizontal position is the commit date;
+        the vertical position is the time of day. Larger circles represent more lines
+        in the current codebase attributed to that commit.
+      </p>
+      <p class="meta-description">
+        <strong>Hover</strong> over a dot for details. <strong>Drag on empty chart space</strong>
+        to select commits, then inspect their language breakdown below.
+      </p>
+      <div id="chart" aria-label="Scatterplot of commits by date and time of day"></div>
+      <div class="meta-controls">
+        <p id="selection-count" aria-live="polite">No commits selected</p>
+        <button type="button" id="clear-selection">Clear selection</button>
+      </div>
+    </section>
+
+    <section aria-labelledby="languages-heading">
+      <h2 id="languages-heading">Languages in selected commits</h2>
+      <dl id="language-breakdown" class="meta-language-breakdown" aria-live="polite">
+        <div class="meta-empty">Select some commits in the chart to see the breakdown.</div>
+      </dl>
+    </section>
+
+    <p class="meta-footnote">
+      Data is generated with <code>elocuent</code> from Git history. Because it attributes
+      lines that are <em>still present</em>, a commit whose changes have all been replaced
+      may not appear. Re-run the analysis after adding commits to refresh the chart.
+    </p>
+    <p id="error" role="alert" hidden></p>
+  </main>
+
+  <dl id="commit-tooltip" class="meta-tooltip" hidden>
+    <dt>Commit</dt>
+    <dd><a href="#" id="commit-link" target="_blank" rel="noopener noreferrer"></a></dd>
+    <dt>Date</dt><dd id="commit-date"></dd>
+    <dt>Time</dt><dd id="commit-time"></dd>
+    <dt>Author</dt><dd id="commit-author"></dd>
+    <dt>Surviving lines</dt><dd id="commit-lines"></dd>
+  </dl>
+</body>
+</html>

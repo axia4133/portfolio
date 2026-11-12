@@ -1,0 +1,211 @@
+/* Only Lab 6's page-specific styles. The parent portfolio controls typography,
+   layout, navigation, accent color, and light/dark mode through ../style.css. */
+.meta-page {
+  --meta-muted: color-mix(in oklch, CanvasText 65%, Canvas);
+  --meta-border: color-mix(in oklch, CanvasText 20%, Canvas);
+  --meta-surface: color-mix(in oklch, CanvasText 5%, Canvas);
+  --meta-grid: color-mix(in oklch, CanvasText 12%, Canvas);
+}
+
+.meta-page main {
+  padding-block: 0.5em 4em;
+}
+
+.meta-page .meta-intro,
+.meta-page .meta-description,
+.meta-page .meta-footnote,
+.meta-page .meta-empty {
+  color: var(--meta-muted);
+}
+
+.meta-page section {
+  margin-block: 2.25em;
+}
+
+.meta-page h1 {
+  margin-block: 0.35em 0.25em;
+}
+
+.meta-page section h2 {
+  margin-bottom: 0.8em;
+}
+
+.meta-page .meta-description {
+  margin-block: 0.5em;
+}
+
+/* Make room for labels and long filenames; avoid the cramped narrow stats
+   columns in the old standalone page. */
+.meta-page #stats > .meta-stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 12rem), 1fr));
+  gap: 1.1em 1.5em;
+  margin: 1.2em 0 0;
+}
+
+.meta-page .meta-stat {
+  min-width: 0;
+}
+
+.meta-page .meta-stat dt {
+  color: var(--meta-muted);
+  font-size: 0.88em;
+  margin-bottom: 0.15em;
+}
+
+.meta-page .meta-stat dd {
+  margin: 0;
+  font-size: 1.5em;
+  font-weight: 650;
+  font-variant-numeric: tabular-nums;
+  line-height: 1.25;
+}
+
+.meta-page .meta-stat--long {
+  grid-column: 1 / -1;
+}
+
+.meta-page .meta-stat--long dd {
+  font-size: 1em;
+  font-weight: 600;
+  overflow-wrap: anywhere;
+}
+
+.meta-page #chart {
+  width: 100%;
+  min-width: 0;
+  margin-block: 1.25em 0.5em;
+}
+
+.meta-page #chart svg {
+  display: block;
+  width: 100%;
+  height: auto;
+  overflow: visible;
+}
+
+.meta-page .meta-axis {
+  color: var(--meta-muted);
+  font-size: 13px;
+}
+
+.meta-page .meta-axis path,
+.meta-page .meta-axis line {
+  stroke: var(--meta-border);
+}
+
+.meta-page .meta-gridlines path { display: none; }
+.meta-page .meta-gridlines line { stroke: var(--meta-grid); }
+.meta-page .meta-axis-label { fill: var(--meta-muted); font-size: 14px; }
+
+.meta-page .meta-dots circle {
+  cursor: pointer;
+  fill: var(--color-accent);
+  fill-opacity: 0.72;
+  stroke: color-mix(in oklch, var(--color-accent) 70%, CanvasText);
+  stroke-width: 0.6;
+  transition: fill-opacity 150ms, opacity 150ms, stroke-width 150ms, transform 150ms;
+  transform-box: fill-box;
+  transform-origin: center;
+}
+
+.meta-page .meta-dots circle:hover,
+.meta-page .meta-dots circle:focus-visible {
+  fill-opacity: 1;
+  stroke-width: 2;
+  transform: scale(1.22);
+  outline: none;
+}
+
+.meta-page .meta-dots circle.is-selected {
+  fill-opacity: 1;
+  stroke: CanvasText;
+  stroke-width: 2.5;
+}
+
+.meta-page .meta-dots circle.is-dimmed { opacity: 0.18; }
+
+.meta-page .meta-brush .selection {
+  fill: var(--color-accent);
+  fill-opacity: 0.12;
+  stroke: var(--color-accent);
+  stroke-width: 1.5;
+  stroke-dasharray: 5 3;
+}
+
+.meta-page .meta-controls {
+  display: flex;
+  gap: 1em;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.meta-page .meta-controls button {
+  font: inherit;
+  color: CanvasText;
+  background: var(--meta-surface);
+  border: 1px solid var(--meta-border);
+  border-radius: 0.35em;
+  padding: 0.35em 0.75em;
+  cursor: pointer;
+}
+
+.meta-page .meta-controls button:hover {
+  background: color-mix(in oklch, var(--color-accent) 15%, Canvas);
+}
+
+.meta-page .meta-language-breakdown {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 13rem), 1fr));
+  gap: 0.75em;
+  margin: 0;
+}
+
+.meta-page .meta-language-row {
+  margin: 0;
+  padding: 0.7em 0.8em;
+  border: 1px solid var(--meta-border);
+  border-radius: 0.4em;
+  background: var(--meta-surface);
+}
+
+.meta-page .meta-language-row dt { font-weight: 600; }
+.meta-page .meta-language-row dd { margin: 0.25em 0; color: var(--meta-muted); }
+.meta-page .meta-language-meter { height: 0.4em; background: var(--meta-border); border-radius: 9em; overflow: hidden; }
+.meta-page .meta-language-meter span { display: block; background: var(--color-accent); height: 100%; border-radius: inherit; }
+.meta-page .meta-empty { grid-column: 1 / -1; font-style: italic; }
+.meta-page .meta-footnote { font-size: 0.88em; margin-top: 2.5em; }
+
+.meta-page #error { color: #bb3b32; }
+
+/* Tooltip inherits the current operating system / site color-scheme. */
+.meta-page .meta-tooltip,
+.meta-tooltip {
+  position: fixed;
+  z-index: 20;
+  left: 0;
+  top: 0;
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  gap: 0.3em 0.75em;
+  max-width: min(22rem, calc(100vw - 1rem));
+  padding: 0.7em 0.9em;
+  margin: 0;
+  font-size: 0.88em;
+  background: Canvas;
+  color: CanvasText;
+  border: 1px solid color-mix(in oklch, CanvasText 25%, Canvas);
+  border-radius: 0.5em;
+  box-shadow: 0 0.4em 1.3em #0003;
+}
+
+.meta-tooltip[hidden] { display: none; }
+.meta-tooltip dt { color: color-mix(in oklch, CanvasText 65%, Canvas); }
+.meta-tooltip dd { margin: 0; overflow-wrap: anywhere; }
+.meta-tooltip a { color: var(--color-accent); }
+
+@media (max-width: 560px) {
+  .meta-page .meta-stats { gap: 1em; }
+  .meta-page .meta-stat dd { font-size: 1.3em; }
+}
