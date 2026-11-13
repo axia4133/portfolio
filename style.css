@@ -209,3 +209,7 @@ h1, h2, h3, h4 , h5, h6 {
 #projects-pie-plot path.selected {
     fill: var(--color);
 }
+
+/* Lab 7 Step 7: project titles link to demos when a URL exists. */
+.projects h2 a { color: inherit; text-decoration: underline; text-decoration-color: var(--color-accent); text-underline-offset: 0.13em; }
+.projects h2 a:hover { color: var(--color-accent); }

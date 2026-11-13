@@ -1,4 +1,3 @@
-
 [
     {
         "title": "League of Legends Comeback Analysis",
@@ -81,5 +80,12 @@
         "image": "https://vis-society.github.io/labs/2/images/empty.svg",
         "description": "Proposed a model to estimate an NBA team's win probability from in-game information such as score and time. The GitHub repository is currently a project placeholder.",
         "url": "https://github.com/axia4133/NBA-Win-Probability-Model"
+    },
+    {
+        "title": "Bikewatching: Boston Bluebikes Traffic",
+        "year": "2026",
+        "image": "https://axia4133.github.io/portfolio/images/bikewatching-screenshot.png",
+        "description": "Built a geospatial visualization with Mapbox and D3 showing bike lanes, Bluebikes stations, and March 2024 trip patterns. Added time filtering, dynamic circle sizes, arrival/departure colors, and tooltips.",
+        "url": "https://axia4133.github.io/bikewatching/"
     }
 ]
